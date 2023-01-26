@@ -1,0 +1,27 @@
+.register_form__wrapper {
+    max-width: 510px;
+    flex: 1;
+}
+.login_btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.login_btn__wrapper a {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #231C35;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.register_img {
+    width: 600px;
+    height: 100vh;
+    background-image: url("../assets/images/register_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

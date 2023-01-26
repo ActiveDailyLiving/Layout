@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/images/favicon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/care_library.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <div class="menu_overlay"></div>
+      <header>
+        <div class="logo_wrapper">
+          <a href="#">
+            <img src="./assets/images/logo.svg" alt="logo"/>
+          </a>
+        </div>
+        <nav class="nav_wrapper desktop">
+          <a href="#" class="search"></a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Care library</a></li>
+            <li><a href="#">Healthcare navigator</a></li>
+            <li><a href="#">Local resources</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <div class="mobile_menu">
+            <a href="#" class="search"></a>
+            <button id="menu_icon" class="menu_icon"></button>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Care library</a></li>
+              <li><a href="#">Healthcare navigator</a></li>
+              <li><a href="#">Local resources</a></li>
+            </ul>
+            <div class="nav_buttons">
+              <button class="gradient blue big">Register</button>
+              <button class="with_border xsmall light">Log in</button>
+            </div>
+          </div>
+        </nav>
+        <div class="nav_buttons">
+          <button class="with_border xsmall dark">Log in</button>
+          <button class="gradient blue medium">Register</button>
+        </div>
+      </header>
+      <div class="main_content">
+        <div class="filters_wrapper">
+          <div class="search_wrapper">
+            <input type="search" placeholder="Search"/>
+          </div>
+          <div class="custom_select desktop">
+            <select id="select_result">
+              <option selected>Relevant results</option>
+              <option>Recent results</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter_sort_wrapper">
+          <div class="filters mobile">
+                <span class="filter_item selected">All <span class="amount">(400)</span> </span>
+                <span class="filter_item">Articles <span class="amount">(100)</span> </span>
+                <span class="filter_item">Tips <span class="amount">(100)</span> </span>
+                <span class="filter_item">Videos <span class="amount">(100)</span> </span>
+                <span class="filter_item">Assessment <span class="amount">(100)</span> </span>
+          </div>
+          <div class="custom_select mobile">
+            <select id="select_result">
+              <option selected>Relevant results</option>
+              <option>Recent results</option>
+            </select>
+          </div>
+        </div>
+        <div class="content_wrapper">
+          <sidebar>
+            <h5>Topics:</h5>
+            <ul>
+              <li><a href="#">All</a></li>
+              <li><a href="#">Caregiving</a></li>
+              <li><a href="#">Childcare</a></li>
+              <li><a href="#">Dementia & Memory Loss</a></li>
+              <li><a href="#">Eldercare</a></li>
+              <li><a href="#">Family Dynamics</a></li>
+              <li><a href="#">Financial & Legal</a></li>
+              <li><a href="#">Insurance Navigation</a></li>
+              <li><a href="#">Health Issues</a></li>
+              <li><a href="#">Long-term Care</a></li>
+              <li><a href="#">Mental & Behavioral Health</a></li>
+              <li><a href="#">Neurodiversity</a></li>
+            </ul>
+          </sidebar>
+          <div class="topic_dropdown_wrapper">
+            <label>Topics</label>
+            <div class="custom_select">
+              <select>
+                <option>All</option>
+                <option>Caregiving</option>
+                <option>Dementia & Memory Loss</option>
+                <option>Eldercare</option>
+                <option>Family Dynamics</option>
+                <option>Financial & Legal</option>
+                <option>Insurance Navigation</option>
+                <option>Health Issues</option>
+                <option>Long-term Care</option>
+                <option>Mental & Behavioral Health</option>
+                <option>Neurodiversity</option>
+              </select>
+            </div>
+          </div>
+          <div class="libarary_wrapper">
+            <div class="filters desktop">
+              <span class="filter_item selected">All <span class="amount">(400)</span> </span>
+              <span class="filter_item">Articles <span class="amount">(100)</span> </span>
+              <span class="filter_item">Tips <span class="amount">(100)</span> </span>
+              <span class="filter_item">Videos <span class="amount">(100)</span> </span>
+              <span class="filter_item">Assessment <span class="amount">(100)</span> </span>
+            </div>
+            <a class="libarary_item" href="#"> 
+              <div class="img_wrapper">
+                <img src="./assets/images/care_lib_img.png" alt="image"/>
+                <button class="save"></button>
+              </div>
+              <div class="libarary_desc">
+                <span class="tip">Tips</span>
+                <h3>Finding Time For Yourself As A Caregiver</h3>
+                <p>Advice and product ideas that help one stand at the sink, use mirrors, and hold and use grooming items at the sink.</p>
+              </div>
+            </a>
+            <a class="libarary_item" href="#">
+              <div class="img_wrapper">
+                <img src="./assets/images/care_lib_img.png" alt="image"/>
+                <button class="save"></button>
+              </div>
+              <div class="libarary_desc">
+                <span class="tip">Tips</span>
+                <h3>Finding Time For Yourself As A Caregiver</h3>
+                <p>Advice and product ideas that help one stand at the sink, use mirrors, and hold and use grooming items at the sink.</p>
+              </div>
+            </a>
+            <div class="pagination">
+              <span class="previus"></span>
+              <span class="selected">1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span class="next"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="copywrite">© 2022 Family first. All Rights Reserved.</div>
+        <ul>
+          <li><a href="#">Family first web site</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Unsubscribe</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

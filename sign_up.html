@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/images/favicon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sign_up.css" />
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <div class="register_wrapper">
+        <div class="register_form__wrapper">
+          <div class="form_headline">
+            <h3>Welcome to ADL</h3>
+            <p>Already have an account?<a>Log in</a></p>
+          </div>
+          <form>
+            <div class="input_row">
+              <label>
+                <span>First Name*</span>
+                <input type="text" placeholder="First Name" />
+              </label>
+              <span class="error_message">'Error'</span>
+            </div>
+            <div class="input_row">
+              <label>
+                <span>Last Name*</span>
+                <input type="text" placeholder="Last Name" />
+              </label>
+              <span class="error_message">'Error'</span>
+            </div>
+            <div class="input_row">
+              <label>
+                <span>Email*</span>
+                <input type="email" placeholder="Email" />
+              </label>
+              <span class="error_message">'Error'</span>
+            </div>
+            <div class="input_row">
+              <label>
+                <span>Password*</span>
+                <input type="password" placeholder="Password"/>
+              </label>
+              <span class="error_message">'Error'</span>
+              <div class="password_hint__wrapper">
+                <span>Use 8 or more characters</span>
+                <span>One Uppercase character</span>
+                <span>One special character</span>
+              </div>
+            </div>
+            <div class="input_row">
+              <label>
+                <span>Confirm Password*</span>
+                <input type="password" placeholder="Confirm Password"/>
+              </label>
+              <span class="error_message">'Error'</span>
+            </div>
+            <div class="checkbox_wrapper">
+              <label class="custom_checkbox">
+                I agree to the Terms and Conditions
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="custom_checkbox">
+                I agree to the Privacy Statement
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <button class="register_btn gradient blue small">
+              Create an account
+            </button>
+          </form>
+          <p class="privacy_policy">
+            By creating an account, you agree to the
+            <a href="#">Terms of use </a>and
+            <a href="#">Privacy Policy. </a>
+          </p>
+        </div>
+        <div class="register_img">
+          <img
+            src="./assets/images/register_img.png"
+            alt="registration image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

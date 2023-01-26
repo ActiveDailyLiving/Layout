@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/images/favicon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <div class="modal_overlay"></div>
+      <div class="menu_overlay"></div>
+      <header>
+        <div class="logo_wrapper">
+          <a href="#">
+            <img src="./assets/images/logo.svg" alt="logo"/>
+          </a>
+        </div>
+        <nav class="nav_wrapper desktop">
+          <a href="#" class="search"></a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Care library</a></li>
+            <li><a href="#">Healthcare navigator</a></li>
+            <li><a href="#">Local resources</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <div class="mobile_menu">
+            <a href="#" class="search"></a>
+            <button id="menu_icon" class="menu_icon"></button>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Care library</a></li>
+              <li><a href="#">Healthcare navigator</a></li>
+              <li><a href="#">Local resources</a></li>
+            </ul>
+            <div class="nav_buttons">
+              <button class="gradient blue big">Register</button>
+              <button class="with_border xsmall light">Log in</button>
+            </div>
+          </div>
+        </nav>
+        <div class="nav_buttons">
+          <button class="with_border xsmall dark">Log in</button>
+          <button class="gradient blue medium">Register</button>
+        </div>
+      </header>
+      <main>
+        <div class="mobile_overlay"></div>
+        <div class="main_banner">
+          <div class="banner_inner">
+            <div class="desc_wrapper">
+              <div>
+                <h1>Helping Seniors and Family Caregivers</h1>
+                <p>With free, personalized advice to enhance health, independence, and aging-in-place.</p>
+                <span class="video_wrapper">Watch video</a>
+              </div>
+            </div>
+            <img src="./assets/images/main_banner_pattern.png"/>
+          </div>
+          <div class="banner_img"></div>
+        </div>
+        <div class="video_modal">
+          <span class="close_icon"></span>
+          <div>
+            <iframe src="https://player.vimeo.com/video/592258475?h=12cbb9f263" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="about_wrapper">
+          <div class="headline">
+            <h2>What we do</h2>
+            <p>At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</p>
+          </div>
+          <div class="whatOffer_wrapper">
+            <div class="whatOffer_inner healthcare_navigators">
+              <span class="whatOffer_icon"></span>
+              <h3>Healthcare Navigators</h3>
+              <p>Practical advice for seniors and caregivers when interacting with health care providers.</p>
+              <a href="#">Show more</a>
+            </div>
+            <div class="whatOffer_inner care_library">
+              <span class="whatOffer_icon"></span>
+              <h3>Care library</h3>
+              <p>Learn how to handle hundreds of common caregiver situations and concerns.</p>
+              <a href="#">Show more</a>
+            </div>
+            <div class="whatOffer_inner monthly_newsletters">
+              <span class="whatOffer_icon"></span>
+              <h3>Monthly Newsletters</h3>
+              <p>Personalized, professionally created health and caregiving content.</p>
+              <a href="#">Show more</a>
+            </div>
+          </div>
+        </div>
+        <div class="healthcare_banner">
+          <div class="headline">
+            <h3>Healthcare Guides</h3>
+            <p>At DL Guides help you find useful 
+              information that make daily living easier. 
+              Three Easy Steps...</p>
+              <button class="medium">Explore</button>
+          </div>
+        </div>
+        <div class="contact_wrapper">
+          <div class="gradient_bg">
+            <div class="contact_inner desktop">
+              <h2>Need more help?</h2>
+              <p>Please feel free to share what caregiving questions you have or type of support you are looking for. Your response will be shared with Family First's Clinical Team, but is otherwise 100% confidential.</p>
+              <button class="expand gradient blue">Request support</button>
+            </div>
+            <div class="contact_inner tablet">
+              <h2>Need more help?</h2>
+              <p>Enter your information below if you want to be contacted for support.</p>
+              <form>
+                <div class="input_row">
+                  <label>
+                    <span>Email</span>
+                    <input type="email" placeholder="Enter your email"/>
+                  </label>
+                </div>
+                <div class="input_row">
+                  <label>
+                    <span>Phone number</span>
+                    <input type="tel" placeholder="Enter your phone number"/>
+                  </label>
+                </div>
+                <div class="input_row">
+                  <label>
+                    <span>Type your request</span>
+                    <textarea placeholder="Type here" rows="3"></textarea>
+                  </label>
+                  <div class="text_limit">
+                    <span>Text limits</span>
+                    <span class="count">0/100</span>
+                  </div>
+                </div>
+                <button class="expand gradient blue">Send request</button>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="copywrite">© 2022 Family first. All Rights Reserved.</div>
+        <ul>
+          <li><a href="#">Family first web site</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Unsubscribe</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

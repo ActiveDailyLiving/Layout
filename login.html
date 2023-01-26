@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/images/favicon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/sign_up.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <div class="register_wrapper">
+        <div class="register_form__wrapper">
+          <div class="form_headline">
+            <h3>Welcome to ADL</h3>
+            <p>Don’t have a profile?<a>Register</a></p>
+          </div>
+          <form>
+            <div class="input_row">
+              <label>
+                <span>Email*</span>
+                <input type="email" placeholder="Email" />
+              </label>
+              <span class="error_message">'Incorrect email'</span>
+            </div>
+            <div class="input_row">
+              <label>
+                <span>Password*</span>
+                <input type="password" />
+              </label>
+              <span class="error_message">'Incorrect password'</span>
+            </div>
+            <div class="login_btn__wrapper">
+              <button class="gradient blue big">Log in</button>
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+        </div>
+        <div class="register_img"></div>
+      </div>
+    </div>
+  </body>
+</html>

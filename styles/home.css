@@ -1,0 +1,438 @@
+.main_banner {
+    position: relative;
+    display: flex;
+    background: linear-gradient(131.64deg, #576ADD 0%, #4BA0D4 100%);
+    justify-content: space-between;
+}
+.main_bg {
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    position: absolute;
+    background-image: url('../assets/images/main_banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.banner_inner  {
+    height: 100%;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.banner_inner  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.desc_wrapper {
+    position: relative;
+    z-index: 6;
+    padding: 187px 146px 214px 88px;
+    max-width: 488px;
+}
+.main_banner .desc_wrapper h1 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.main_banner .desc_wrapper p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    color: #DCE6F5;
+    margin: 16px 0 44px;
+}
+.banner_img {
+    flex:1;
+    max-width: 723px;
+    display: inline-block;
+    background-image: url('../assets/images/main_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video_wrapper  {
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0 22px;
+}
+.video_wrapper::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('../assets/images/icons/play_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 14px;
+}
+.video_modal {
+    width: 76.736vw;
+    display: none;
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video_modal.opened {
+    display: block;
+}
+.video_modal.opened div {
+    height: 618px;
+    text-align: center;
+}
+.video_modal.opened .close_icon {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-image: url("../assets/images/icons/modal_close_icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.about_wrapper {
+    padding: 100px 115px 112px 115px;
+}
+.about_wrapper .headline {
+    max-width: 590px;
+    text-align: center;
+    margin:0 auto 104px;
+}
+.about_wrapper .headline h2 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #231C35;
+    margin-bottom: 18px;
+}
+.about_wrapper .headline p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7D7D7D;
+
+}
+.whatOffer_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.whatOffer_wrapper .whatOffer_inner {
+    max-width: 352px;
+    text-align: center;
+}
+.whatOffer_wrapper .whatOffer_inner .whatOffer_icon {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.whatOffer_wrapper .whatOffer_inner.healthcare_navigators .whatOffer_icon {
+    background-image: url("../assets/images/icons/healthcare_navigators.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatOffer_wrapper .whatOffer_inner.care_library .whatOffer_icon {
+    background-image: url("../assets/images/icons/care_library.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatOffer_wrapper .whatOffer_inner.monthly_newsletters .whatOffer_icon {
+    background-image: url("../assets/images/icons/monthly_newsletters.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatOffer_wrapper .whatOffer_inner h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #231C35; 
+}
+.whatOffer_wrapper .whatOffer_inner p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7D7D7D;
+    margin: 16px 0 50px;
+}
+.whatOffer_wrapper .whatOffer_inner a {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #231C35;
+}
+.healthcare_banner {
+    padding: 77px 88px 80px;
+    background-image: url("../assets/images/healthcare_banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+.healthcare_banner .headline {
+    max-width: 488px;
+}
+.healthcare_banner .headline h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.healthcare_banner .headline p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin: 16px 0 48px;
+}
+.healthcare_banner .headline button {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #231C35;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+}
+.contact_wrapper {
+    background: linear-gradient(180deg, #576ADD 0%, #231C35 100%);
+    padding: 125px 0;
+}
+.contact_wrapper .gradient_bg {
+    max-width: 808px;
+    background: linear-gradient(250.43deg, #F25195 1.31%, #FFB655 98.54%);
+    box-shadow: 5px 4px 34px rgb(43 48 94 / 7%);
+    border-radius: 20px;
+    padding: 5px 0 0;
+    margin: 0 auto;
+    
+}
+.contact_wrapper .gradient_bg .contact_inner {
+    max-width: 808px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 75px 110px;
+    border-radius: 20px;
+    box-shadow: 5px 4px 34px rgba(43, 48, 94, 0.07);
+}
+.contact_wrapper .gradient_bg .contact_inner.tablet {
+    display: none;
+}
+.contact_wrapper h2 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #231C35;
+}
+.contact_wrapper p {
+    max-width: 480px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7D7D7D;
+    margin: 16px auto 38px;
+}
+@media only screen and (max-width: 1340px) and (min-width: 1200px) {
+    .desc_wrapper {
+        padding: 160px 88px 180px 88px;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    .desc_wrapper {
+        padding: 88px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .desc_wrapper {
+        max-width: 403px;
+        padding: 207px 24px 217px 24px;
+    }
+    .main_banner .desc_wrapper h1 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .main_banner .desc_wrapper p {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 16px 0 57px;
+    }
+    .video_wrapper::after {
+        width: 20px;
+        height: 20px;
+    }
+    .banner_img {
+        max-width: 512px;
+        background-image: url("../assets/images/main_banner_tablet.png");
+    }
+    .desc_wrapper:after {
+        background-image: url("../assets/images/main_banner_pattern_tablet.svg");
+    }
+    .about_wrapper .headline {
+        margin: 0 auto 40px;
+    }
+    .about_wrapper .headline h2 {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 16px;
+    }
+    .about_wrapper {
+        padding: 100px 40px 112px 40px;
+    }
+    .whatOffer_wrapper .whatOffer_inner:not(:last-of-type) {
+        margin-bottom: 74px;
+    }
+    .whatOffer_wrapper .whatOffer_inner p {
+        margin: 16px 0 24px;
+    }
+    .whatOffer_wrapper .whatOffer_inner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .healthcare_banner {
+        padding: 77px 40px 110px 40px;
+        background-image: url(../assets/images/healthcare_banner_tablet.png);
+    }
+    .healthcare_banner .headline {
+        max-width: 355px;
+    }
+    .healthcare_banner .headline h3 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .healthcare_banner .headline p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contact_wrapper .gradient_bg .contact_inner.tablet {
+        display: block;
+    }
+    .contact_wrapper .gradient_bg .contact_inner.desktop {
+        display: none;
+    }
+    .text_limit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .text_limit span {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #7D7D7D;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .whatOffer_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatOffer_wrapper .whatOffer_inner {
+        max-width: 380px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner_img {
+        display: none;
+    }
+    .main_banner .desc_wrapper h1 {
+        text-align: center;
+    }
+    .desc_wrapper {
+        max-width: 100%;
+        padding: 187px 24px 244px 24px;
+    }
+    .main_banner .desc_wrapper p {
+        text-align: center;
+    }
+    .video_wrapper {
+        justify-content: center; 
+    }
+    .about_wrapper {
+        padding: 56px 24px 106px;
+    }
+    .about_wrapper .headline {
+        margin: 0 auto 85px;
+    }
+    .whatOffer_wrapper .whatOffer_inner .whatOffer_icon {
+        margin-bottom: 20px;
+    }
+    .whatOffer_wrapper .whatOffer_inner:not(:last-of-type) {
+        margin-bottom: 105px;
+    }
+    .whatOffer_wrapper .whatOffer_inner p {
+        margin: 20px 0 40px;
+    }
+
+    .healthcare_banner {
+        padding: 80px 24px;
+        background-image: url(../assets/images/healthcare_banner_mobile.png);
+        margin-bottom: 58px;
+    }
+    .healthcare_banner .headline {
+        max-width: 100%;
+        text-align: center;
+    }
+    .healthcare_banner .headline p {
+        padding: 0 15px;
+        margin: 16px 0 70px;
+    }
+    .healthcare_banner .headline button {
+        padding: 18px 100px;
+    }
+    .contact_wrapper {
+        padding: 40px 24px;
+    }
+    .contact_wrapper .gradient_bg .contact_inner {
+        padding: 40px 24px;
+    }
+    .contact_wrapper h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .contact_wrapper p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    button.expand {
+        width: 100%;
+    }
+}

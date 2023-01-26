@@ -1,0 +1,302 @@
+.article_content {
+    max-width: 815px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+.article_headline {
+    text-align: center;
+}
+.article_headline h2 {
+    max-width: 618px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #231C35;
+    margin: 32px auto 48px;
+}
+.article_body {
+    padding-top: 37px;
+}
+.article_body p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #231C35;
+}
+.article_body p::first-letter {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 56px;
+    color: #231C35;
+    float: left;
+    margin-right: 15px;
+}
+.article_body h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #231C35;
+    margin: 30px 0 35px;
+}
+.article_body ul {
+    padding-left: 20px;
+}
+.article_body ul li {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #231C35;
+    list-style: auto;
+    margin-bottom: 30px;
+}
+.article_body ul li:maker {
+    padding-left: 20px;
+}
+.article_body ul li span {
+    display: block;
+}
+.article_body ul li span:not(:first-of-type) {
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+.article_body ul li span:last-of-type {
+    margin-bottom: 0;
+}
+.article_body ul li span:first-of-type {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #576ADD;
+}
+.article_wrapper .info {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7D7D7D;
+    margin: 77px 0 96px;
+}
+.commercial_products {
+    margin-bottom: 80px;
+}
+.commercial_products h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: #111827;
+    margin-bottom: 25px;
+}
+.commercial_item  {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.product_item span   {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 11px;
+}
+.commercial_products img {
+    max-width: 190px;
+}
+.commercial_products span  {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #111827;
+}
+.article_banner {
+    width: 100%;
+    background-image: url('../assets/images/article_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.article_banner .article_banner__inner {
+    max-width: 834px;
+    padding: 120px 0;
+    margin-right: auto;
+}
+.article_banner .banner_desc {
+    max-width: 488px;
+    margin: 0 auto;
+}
+.article_banner h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.article_banner p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 35px 0 24px;
+}
+.suggestion_wrapper {
+    max-width: 834px;
+    padding: 80px 0 110px;
+    margin: 0 auto;
+}
+.suggestion_item__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 5px;
+}
+
+.suggestion_wrapper h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+.suggestion_item img {
+    max-width: 288px;
+}
+.suggestion_item .tip {
+    margin: 10px 0;
+}
+.suggestion_item h4 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #231C35;
+}
+@media only screen and (max-width: 1024px) {
+    .article_content, .suggestion_wrapper {
+        max-width: 782px;
+        width: 76.367vw;
+    }
+    .article_wrapper .info {
+        margin: 85px 0 70px;
+    }
+    .article_headline h2 {
+        max-width: 400px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .article_wrapper img {
+        width: 100%;
+        height: auto;
+    }
+    .article_banner {
+        background-image: url("../assets/images/article_banner_tablet.png");
+    }
+    .suggestion_item h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .suggestion_item .tip {
+        margin: 11px 0 16px;
+    }
+    .img_wrapper img {
+        width: 23.633vw;
+        max-width: 242px;
+    }
+    .article_banner .banner_desc button.medium {
+        padding: 18px 34px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .article_content {
+        padding-top: 28px;
+    }
+    .article_content, .suggestion_wrapper {
+        max-width: 380px;
+        width: 88.785vw;
+    }
+    .article_headline h2 {
+        font-size: 24px;
+        line-height: 37px;
+        margin: 10px auto 15px;
+    }
+    .commercial_products {
+        margin-bottom: 50px;
+        overflow-x: auto;
+    }
+    .commercial_item {
+        gap: 15px;
+    }
+    .commercial_products img {
+        max-width: 182px;
+    }
+    .commercial_products span {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .img_wrapper img {
+        width: 182px;
+        max-width: 182px;
+    }
+    .article_banner {
+        background-image: url("../assets/images/article_banner_mobile.png");
+    }
+    .article_banner h3 {
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .article_banner p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 35px 0 30px;
+    }
+    .article_banner .banner_desc {
+        text-align: center;
+    }
+    .article_banner .article_banner__inner {
+        padding: 58px 20px 174px;
+    }
+    .suggestion_wrapper {
+        padding: 40px 0 50px;
+        overflow-x: auto;
+    }
+    .img_wrapper img {
+        width: 181px; 
+    }
+    .suggestion_item__wrapper {
+        gap: 18px;
+    }
+    .suggestion_item .tip {
+        margin: 15px 0 20px;
+    }
+    .suggestion_item h4 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+}
